@@ -1,0 +1,26 @@
+.slider
+{
+    position: relative;
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+}
+
+.slider img{
+    width: 600px;
+    height:600px;
+}
+
+
+body
+{
+    align-items: center;
+    min-height: 90vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+.name
+{
+    color: black;
+}
