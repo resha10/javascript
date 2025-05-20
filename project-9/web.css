@@ -1,0 +1,264 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppies';
+    font-size: 19px;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header
+{
+    background-color: pink;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: sticky;
+    font-size: 30px;
+}  
+h1{
+    font-size: 35px;
+    color:palevioletred;
+    justify-content: center;
+    padding: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart, .add-product-btn
+{
+    background: white;
+    color: dark palevioletred;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.header-buttons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.cart-btn span
+{
+    color: black;
+    padding: 4px 9px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.cart-btn
+{
+    background-color: white;
+    border: none;
+    border-radius: 9px;
+    padding-right: 9px;
+}
+#cartCount
+{
+    background-color: plum;
+}
+.product-form
+{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none; 
+}
+
+.product-form h2
+{
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.cart-btn span
+{
+    background: white;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.product-form input[type="submit"]
+{
+    background: palevioletred;
+    color: rgb(57, 48, 48);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.product-form input[type="submit"]:hover
+{
+    background: white;
+}
+
+.product-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.product-card
+{
+    background: plum;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-form input
+{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 2px solid plum;
+    font-size: 1rem;
+    text-align: center;
+}
+.product-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px pink(0, 0, 0, 0.2);
+}
+
+.product-card img
+{
+    width: auto;
+    height: 150px;
+    object-fit: cover;  
+    border-radius: 8px;
+}
+
+.product-card h3
+{
+    margin: 8px 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.product-card p
+{
+    font-size: 20px;
+    color: pink;
+}
+
+
+.product-card button:hover
+{
+    background: white;
+}
+
+.product-card button
+
+{
+    background: pink;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.cart-sidebar
+{
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background: #fffbe9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    transition: right 0.4s ease-in-out;
+}
+
+.cart-sidebar.open
+{
+    right: 0;
+}
+
+.container ,.product-card
+{
+
+    justify-content: space-evenly;
+}
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h2
+{
+    font-size: 20px;
+    color: #333;
+}
+
+.close-cart
+{
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-items
+{
+    margin-top: 20px;
+}
+
+.cart-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img
+{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item button
+{
+    background: pink;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    
+   
+    <div class="header">
+
+        <h1 class="logo">naykaa</h1>
+
+       <div class="header-buttons">
+                    <button class="add-product-btn" id="addProductButton">Add Product</button>
+                    <button class="cart-btn" id="cartButton">🛒 Cart <span id="cartCount">0</span></button>
+                </div>
+        </div>
+
+       
+         <div class="product-form" id="productForm">
+            <form id="pro-FormSubmit">
+                <h2>Add beauty product </h2>
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="text" id="productPrice" placeholder="Product Price" required>
+                <input type="text" id="productImage" placeholder="Image URL" required>
+                <input type="submit" value="Add Product">
+            </form>
+        </div>
+
+         <div class="container">
+        <div class="product-list" id="productList"></div>
+    </div>
+</div>
+
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button class="close-cart" id="closeCart">✖</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+    </div>
+
+    
+       <script src="we.js"></script>
+</body>
+</html>
